@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Изображение</title>
+</head>
+<body>
+    <h2>Загрузите изображение:</h2>
+    <form action="{{ url_for('predict1') }}" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/*"><br>
+        <button type="submit">Загрузить</button>
+    </form>
+    <form action="{{ url_for('predict2') }}" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/*"><br>
+        <button type="submit">Загрузить</button>
+    </form>
+    <form action="{{ url_for('predict3') }}" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/*"><br>
+        <button type="submit">Загрузить</button>
+    </form>
+</body>
+</html>
